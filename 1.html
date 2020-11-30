@@ -6,42 +6,72 @@
 <title>Document</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style type="text/css">
-	p{
-			color:gray;
-			margin: 5px;
-			cursor: pointer;
+
+  p{
+   color:gray;
+   margin:5px;
+   cursor:pointer;
+   }
+
+  p:hover{
+   background:purple;
 	}
-		p:hover{
-			background:purple;
-	}
-	.zenbo{
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 10;
-		background: rgba(0,0,0,0.5);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	</style>
+
+  .coffee-shop{
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   z-index:10;
+   background:rgba(0,0,0,0.5);
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   }
+
+  .false{
+   position:fixed;
+   top:0;
+   right:0;
+   z-index:10;
+   display:flex;
+   justify-content:right;
+   align-items:right;
+   }
+    
+</style>
 </head>
 <body>
 <p>coffee-shop</p>
 <h1>悠閒,睡覺</h1>
-<div class="zenbo">
+<div class="coffee-shop">
 <img src="https://i.pinimg.com/564x/e7/22/9c/e7229ca23547bc1302f5d8e538e2ad90.jpg">
 </div>
 
-	<script type="text/javascript">
-		$("p").click(function(){
-			$(".zenbo").slideToggle();
-		});
-		$("img").click(function(){
-			$(".zenbo").slideToggle();
-		});
-	</script>
+<div class="false">
+<img src="https://icon-library.com/images/false-icon/false-icon-3.jpg" width="50" height="50" >
+</div>
+
+
+<script type="text/javascript">
+   $("p").click(function(){
+   $(".coffee-shop").slideToggle();
+   });
+   $("img").click(function(){
+   $(".coffee-shop").slideToggle();
+   });
+   
+   $("p").click(function(){
+   $(".false").slideToggle();
+   });
+   $("img").click(function(){
+   $(".false").slideToggle();
+   });
+
+</script>
+
 </body>
+
+
 </html>
